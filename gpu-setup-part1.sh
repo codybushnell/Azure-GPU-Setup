@@ -13,11 +13,11 @@ cd $SETUP_DIR
 sudo apt-get -y install python3-numpy python3-dev python3-wheel python3-mock python3-matplotlib python3-pip
 
 # install cuda drivers
-if [ ! -f "cuda_9.0.176_384.81_linux.run" ]; then 
-	wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_9.0.176_384.81_linux.run
+if [ ! -f "cuda_8.0.61_375.26_linux-run" ]; then 
+	wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
 fi
-chmod +x cuda_9.0.176_384.81_linux.run
-sudo sh cuda_9.0.176_384.81_linux.run --silent --verbose --driver
+chmod +x cuda_8.0.61_375.26_linux-run
+sudo sh cuda_8.0.61_375.26_linux-run --silent --verbose --driver
 
 echo "Setup requires a reboot to continue."
 echo "The VM will reboot now. Login after it restarts and continue installation from part2."
